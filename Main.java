@@ -36,8 +36,38 @@ public class Main {
    // watch out for the plus sign!
    System.out.println(3 +"3"); //int+ string going to equal a string 
 
+   //you can set one variable to another value
+
+   int zachage = 16;
+   int miaage = zach_age;
+   
+   //both variables above contain the same value 
+   //practice copying and re-assigning values 
+
+   int x = 15;
+   int y = 21;
+   int z = 2;
+   x = y; //x now stores the same value as y 
+   y= y * 2;
+   z = 27; 
+
+system.out.println("x is " +x);
+system.out.println("Y is " +y);
+system.out.println("Z is " +z);
+
+//type mismatch error 
+int num1 = 3; // int would cause an error below
+double num2 = 3.14;
+num1 = 2 * num2; // can't fit a double into an int 
+system.out.println(num1);
 
 
+// INCREMENT: add on to current valuw 
+int score = 0; 
+points = points + 1;
+// decrement: decrease an existing value 
+points = points - 15;
+System.out.println(points);
 
 
    }
