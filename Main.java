@@ -1,75 +1,77 @@
-
-//Every java file is a class
 public class Main {
-// main method is the entryway to the program
-   public static void main(String []args) {
-      System.out.println(" hiii");
-     
-     
-      //OUTPUT: difference between .print & .println
-      
+   public static void main(String[] args) {
+      System.out.println("hiii");
+
       System.out.print("Hi");
       System.out.println("there");
       System.out.print("!");
-   //.println displays the message and then goes to the next line 
+     
+      String message = "\nI woke up and said, \"hello world\"";
+      System.out.print(message);
 
-   //escape: use \ (backslash) to include speacial characters, use \n for line breaks 
-   String message = "\n I woke up and said, \"hello world\"";
-   System.out.print(message);
+      System.out.println(4 + 3);
+      System.out.println(4 - 1);
+      System.out.println(6 * 7);
+      System.out.println(5 / 3); 
+      System.out.println(5.0 / 3); 
+      double result = 2 + (3 * 2 - 6); 
+      System.out.println(result);
 
-   //Arithmetic Exception expression with opperation 
-   System.out.println(4+3);
-   System.out.println(4-1);
-   System.out.println(6*7);
-   System.out.println(5/3); // TRUNCATED! 
-   // Integer divison results in truncation which is throwing away the decimal places 
-   System.out.println(5.0/3); //.double 
-   // compound expressions follow PEMDAS 
-   double result = 2+(3*2-6); 
-   System.out.println(result);
+      int remain = 23 % 2; 
+      System.out.println(remain);
+      System.out.println(628 % 2);
 
-   //remainder % operator 
-   int remain = 23 % 2; //1 -> means odd number
-   System.out.println(remain);
-   System.out.println(628 % 2); // 0 means even 
+      System.out.println(3 + "3");  
 
-   // watch out for the plus sign!
-   System.out.println(3 +"3"); //int+ string going to equal a string 
+      int zachAge = 16;
+      int miaAge = zachAge;
 
-   //you can set one variable to another value
+      int x = 15;
+      int y = 21;
+      int z = 2;
+      x = y; 
+      y = y * 2;
+      z = 27; 
 
-   int zachage = 16;
-   int miaage = zach_age;
-   
-   //both variables above contain the same value 
-   //practice copying and re-assigning values 
+      System.out.println("x is " + x);
+      System.out.println("y is " + y);
+      System.out.println("z is " + z);
 
-   int x = 15;
-   int y = 21;
-   int z = 2;
-   x = y; //x now stores the same value as y 
-   y= y * 2;
-   z = 27; 
+      int num1 = 3; 
+      double num2 = 3.14;
+      System.out.println("num1 is still " + num1);
 
-system.out.println("x is " +x);
-system.out.println("Y is " +y);
-system.out.println("Z is " +z);
+  
+      int points = 0; 
+      points = points + 1;
+     
+      points = points - 15;
+      System.out.println(points);
 
-//type mismatch error 
-int num1 = 3; // int would cause an error below
-double num2 = 3.14;
-num1 = 2 * num2; // can't fit a double into an int 
-system.out.println(num1);
+      
+      int originalValue = 5; 
+      double castDouble = (double) originalValue; 
+      System.out.println("Cast to double: " + castDouble);
+      int castInt = (int) castDouble;
+      System.out.println("Cast back to int: " + castInt); 
 
+      System.out.println(3 / 4); //0 
+      System.out.println(3.0/ 4); //0.75
+       System.out.println(3 / 4.0);//0.75
+      System.out.println((double) 3/4); 
+      //casting presereved the decimal places 
 
-// INCREMENT: add on to current valuw 
-int score = 0; 
-points = points + 1;
-// decrement: decrease an existing value 
-points = points - 15;
-System.out.println(points);
+// Casting is helpful when dividing integers 
+int apcs = 13;
+int juniors = 40;
+double csPercent = (double) apcs/juniors;
+System.out.println(csPercent); //0.325
+//rounding by casting
+double positiveNum = 11.0;
+double negativeNum = -4.0;
+int nearestPositive = (int) (positiveNum + 0.5);
+int nearestnegitive = (int) (negativeNum - 0.5);
 
 
    }
 }
-
