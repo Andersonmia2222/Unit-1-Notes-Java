@@ -69,7 +69,7 @@ System.out.println(csPercent); //0.325
 //rounding by casting
 double positiveNum = 11.0;
 double negativeNum = -4.0;
-int nearestPositive = (int) (positiveNum + 0.5);
+int nearestPositive = (int) (positiveNum +0.5);
 int nearestnegitive = (int) (negativeNum - 0.5);
 
 
