@@ -41,14 +41,12 @@ public class Main {
       double num2 = 3.14;
       System.out.println("num1 is still " + num1);
 
-  
       int points = 0; 
       points = points + 1;
      
       points = points - 15;
       System.out.println(points);
 
-      
       int originalValue = 5; 
       double castDouble = (double) originalValue; 
       System.out.println("Cast to double: " + castDouble);
@@ -56,22 +54,41 @@ public class Main {
       System.out.println("Cast back to int: " + castInt); 
 
       System.out.println(3 / 4); //0 
-      System.out.println(3.0/ 4); //0.75
-       System.out.println(3 / 4.0);//0.75
-      System.out.println((double) 3/4); 
-      //casting presereved the decimal places 
+      System.out.println(3.0 / 4); //0.75
+      System.out.println(3 / 4.0); //0.75
+      System.out.println((double) 3 / 4); 
+      //casting preserved the decimal places 
 
-// Casting is helpful when dividing integers 
-int apcs = 13;
-int juniors = 40;
-double csPercent = (double) apcs/juniors;
-System.out.println(csPercent); //0.325
-//rounding by casting
-double positiveNum = 11.0;
-double negativeNum = -4.0;
-int nearestPositive = (int) (positiveNum +0.5);
-int nearestnegitive = (int) (negativeNum - 0.5);
+      // Casting is helpful when dividing integers 
+      int apcs = 13;
+      int juniors = 40;
+      double csPercent = (double) apcs / juniors;
+      System.out.println(csPercent); //0.325
 
+      //rounding by casting
+      double positiveNum = 11.0;
+      double negativeNum = -4.0;
+      int nearestPositive = (int) (positiveNum + 0.5);
+      int nearestNegative = (int) (negativeNum - 0.5);
 
+      // COMPOUND OPERATORS (SHORTCUT) 
+      int runs = 0; 
+      // Re-assign variable to existing value + 1 
+      runs = runs + 1; 
+      runs += 1; // operator first, then results assign back 
+
+      System.out.println("Runs:" + runs); 
+      // even shorter for adding and subtracting One 
+      runs++;
+      runs--; // same as runs = runs - 1;
+
+      // more examples of shortcuts 
+      runs = runs * 2;
+      runs *= 3; 
+      System.out.println("runs is now " + runs);
+      runs *= -10; 
+      runs /= 10; //dividing current value by 10
+
+   runs %= 7; //remainder of runs/7
    }
 }
